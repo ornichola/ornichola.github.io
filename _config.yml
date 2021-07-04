@@ -1,16 +1,23 @@
-title: Голокрон
-email: ornichola@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Небольшой блог для заметок и структурирования изучаемой информации.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ornichola
-github_username:  ornichola
+version: 0.1
+author:
+  name: ornichola
 
-# Build settings
+
+baseurl: ""
+url: ""
+title: Голокрон
+description: >-
+  Заметки об изучаемом материале.
+
+
 theme: jekyll-theme-hyde
 plugins:
+  - jekyll-sitemap
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+paginate: 5
+
 
 exclude:
   - .sass-cache/
