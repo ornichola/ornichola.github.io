@@ -1,8 +1,0 @@
----
-layout: post
-title:  "Almost ten"
-date:   2021-07-04 09:30:00 +0300
-categories: unsorted
----
-
-But still not.
