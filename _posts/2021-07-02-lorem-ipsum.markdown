@@ -2,7 +2,7 @@
 layout: post
 title:  "Lorem Ipsum"
 date:   2021-07-02 00:03:29 +0300
-categories: lorem ipsum
+categories: test lorem ipsum
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt erat a tortor tristique, vel efficitur quam scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod laoreet sapien et accumsan. Nunc a commodo quam. In lacus mi, vestibulum at vehicula sed, volutpat ut mauris. Etiam ex leo, placerat ut tellus sit amet, sagittis pretium eros. Vivamus ac tristique dolor. Curabitur nec egestas quam. Mauris id sem malesuada, blandit neque at, tempus nibh. Fusce id eros eget leo ullamcorper sodales. Morbi nisl sapien, laoreet nec placerat in, blandit eu ante. Integer eu velit vel sapien volutpat volutpat rutrum sed neque. Nam eu porttitor libero, at ornare orci. Nullam ut magna nec quam gravida aliquet.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Testing excerpt"
 date:   2021-07-14 23:40:00 +0300
-categories: test
+categories: test excerpt
 ---
 
 Some small paragraph.
