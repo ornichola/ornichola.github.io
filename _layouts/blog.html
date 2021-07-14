@@ -4,29 +4,34 @@ layout: default
 
 <div class="posts">
   {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+    {% unless post.categories contains "test" %}  <!-- hide test posts -->
+      <div class="post">
+        <h1 class="post-title">
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title }}
+          </a>
+        </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+        <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content }}
-  </div>
+        {{ post.excerpt }}
+        {% if post.content contains site.excerpt_separator %}
+          <a href="{{ site.baseurl }}{{ post.url }}">Читать далее</a>
+        {% endif %}
+      </div>
+    {% endunless %}
   {% endfor %}
 </div>
 
 <div class="pagination">
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path }}" class="previous">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path }}">Older</a>
+    <a class="pagination-item older" href="{{ paginator.next_page_path }}">&larr; назад</a>
   {% else %}
-    <span class="pagination-item older">Older</span>
+    <span class="pagination-item older">&larr; назад</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+  <a class="pagination-item newer" href="{{ paginator.previous_page_path }}" class="previous">вперед &rarr;</a>
+  {% else %}
+    <span class="pagination-item newer">вперед &rarr;</span>
   {% endif %}
 </div>
