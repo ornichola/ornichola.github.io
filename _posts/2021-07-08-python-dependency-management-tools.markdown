@@ -39,7 +39,7 @@ pip install virtualenv
 python -m virtualenv path/to/your-venv
 ```
 
-В чем же разница между venv и virtualenv, ведь на первый взгяд они делают одно и то же? venv по сути можно назвать подмножеством пакета virtualenv, т.е. его сокращенной версией. По [информации из официальной документации](https://virtualenv.pypa.io/en/stable/), virtualenv имеет ряд преимуществ перед venv:
+В чем же разница между venv и virtualenv, ведь на первый взгяд они делают одно и то же? venv по сути можно назвать подмножеством пакета virtualenv, т.е. его сокращенной версией. По [информации из официальной документации](https://virtualenv.pypa.io/en/stable/), venv имеет ряд недостатков по сравнению с virtualenv:
 1. медленнее, так как virtualenv использует [метод app-data seed](https://virtualenv.pypa.io/en/latest/user_guide.html#seeders) (единожды при первом использовании создает пакеты pip, setuptools, wheel, а при последующих вызовах просто копирует или линкует их)
 2. не расширяем, не имеет богатого API
 3. создает окружение только для своей версии Python
