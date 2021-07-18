@@ -17,3 +17,11 @@
   margin-right: auto;
   width: 50%;
 }
+
+.post-container {
+  text-align: justify;
+}
+
+.post-container-excerpted {
+  text-align: justify;
+}

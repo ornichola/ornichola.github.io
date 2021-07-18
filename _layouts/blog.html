@@ -4,7 +4,8 @@ layout: default
 
 <div class="posts">
   {% for post in paginator.posts %}
-    {% unless post.categories contains "test" %}  <!-- hide test posts -->
+    <!-- hide test posts -->
+    {% unless post.categories contains "test" %}
       <div class="post">
         <h1 class="post-title">
           <a href="{{ post.url | relative_url }}">
@@ -14,13 +15,15 @@ layout: default
 
         <span class="post-date">{{ post.date | date_to_string }}</span>
 
-        {{ post.excerpt }}
+        <div class="post-container-excerpted">
+          {{ post.excerpt }}
+        </div>
         {% if post.content contains site.excerpt_separator %}
           <a href="{{ site.baseurl }}{{ post.url }}">Читать далее</a>
         {% endif %}
       </div>
-    {% endunless %}
-  {% endfor %}
+      {% endunless %}
+    {% endfor %}
 </div>
 
 <div class="pagination">
