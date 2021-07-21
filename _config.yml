@@ -18,6 +18,7 @@ plugins:
 paginate: 5
 paginate_path: "/blog/page:num/"
 excerpt_separator: <!--more-->
+future: true
 
 exclude:
   - .sass-cache/
